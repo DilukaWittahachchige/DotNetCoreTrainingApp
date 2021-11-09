@@ -1,4 +1,5 @@
 ﻿// Import components to use in the file
+using BLL;
 using System;
 
 // A namespace is a logical grouping of components
@@ -11,8 +12,16 @@ namespace DotNetCoreTrainingApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!"); // Instructions separated by ";"
+
+            var data = SnapsEngine.LoadData();
+
+            Console.WriteLine(data);
         }
     }
+
+
+
+
 
     /* Comments
        can also
