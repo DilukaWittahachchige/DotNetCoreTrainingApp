@@ -27,7 +27,9 @@ namespace BLL
 
             string text2 = text + " jklm"; // this is a string concatenation
 
-            IEnumerable<int> xs = OddSequence(50, 110);
+            IEnumerable<int> xs = OddSequence(50, 90);
+
+
 
             return $"Final string : {text2} {d} {b} {a} {text}  {flt}, {dbl}, {dcm}";   //string interpolation |This feature is available starting with C# 6.
 
