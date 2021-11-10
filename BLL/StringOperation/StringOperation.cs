@@ -16,7 +16,6 @@ namespace BLL.StringOperation
             // is to be Concatenate
             String st = "forGeeks";
 
-
             // using String.Concat method
             // you can also replace it with
             // s1 = s1 + "forgeeks";
@@ -26,7 +25,6 @@ namespace BLL.StringOperation
 
             s1 = String.Concat(s1, st);
        
-
             //New string after concat two strings
             Console.WriteLine("new string after concat :"+st1);
 

@@ -25,6 +25,11 @@ namespace DotNetCoreTrainingApp
             //Nothing display for index 1
             Console.WriteLine($"{styArraySecond[0]} {styArraySecond[1]}");
 
+            //List
+            dataStructures.LoadNameList();
+
+            //Dictionary
+            dataStructures.LoadAgeDict();
 
             StringOperation stringOpp = new StringOperation();
             stringOpp.LoadStringData();
