@@ -1,6 +1,7 @@
 ﻿// Import components to use in the file
 using BLL;
 using BLL.DataStructures;
+using BLL.StringOperation;
 using System;
 
 // A namespace is a logical grouping of components
