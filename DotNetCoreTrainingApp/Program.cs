@@ -13,28 +13,41 @@ namespace DotNetCoreTrainingApp
         // The Main method is the entrypoint of an application
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!"); // Instructions separated by ";"
+            //Console.WriteLine("Hello World!"); // Instructions separated by ";"
 
-            var data = SnapsEngine.LoadData();
+            //var data = SnapsEngine.LoadData();
 
             DataStructure dataStructures = new DataStructure();
-            string[] strArray = dataStructures.LoadArrayDataFirst();
-            string[] styArraySecond = dataStructures.LoadArrayDataSecond();
+            //string[] strArray = dataStructures.LoadArrayDataFirst();
+            //string[] styArraySecond = dataStructures.LoadArrayDataSecond();
             //array is accessed through its index
-            Console.WriteLine($"{strArray[0]} {strArray[1]}");
+            //Console.WriteLine($"{strArray[0]} {strArray[1]}");
             //Nothing display for index 1
-            Console.WriteLine($"{styArraySecond[0]} {styArraySecond[1]}");
+            //Console.WriteLine($"{styArraySecond[0]} {styArraySecond[1]}");
 
             //List
-            dataStructures.LoadNameList();
+            //dataStructures.LoadNameList();
 
             //Dictionary
-            dataStructures.LoadAgeDict();
+            //dataStructures.LoadAgeDict();
 
-            StringOperation stringOpp = new StringOperation();
-            stringOpp.LoadStringData();
+            //switch condition
+            //dataStructures.LoadResponse("eco");
 
-            Console.WriteLine(data);
+            //Hashtable
+            //dataStructures.LoadHashtable();
+
+            Coordinate point = new Coordinate(10, 20);
+            //Console.WriteLine(point.x); //output: 10  
+           // Console.WriteLine(point.y); //output: 20
+
+            //Enum 
+            dataStructures.LoadValue(Direction.UP);
+
+            //StringOperation stringOpp = new StringOperation();
+            //stringOpp.LoadStringData();
+
+            //Console.WriteLine(data);
         }
     }
 
