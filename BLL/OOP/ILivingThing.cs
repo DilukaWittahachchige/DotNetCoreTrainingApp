@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 namespace BLL.OOP
 {
     //Interface
+    /*
+     An interface defines a contract, a behavior a method must have to be
+      considered as of the interface type.
+     */
     public interface ILivingThing
     {
         //method
