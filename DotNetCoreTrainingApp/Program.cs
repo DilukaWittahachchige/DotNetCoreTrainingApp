@@ -1,6 +1,7 @@
 ﻿// Import components to use in the file
 using BLL;
 using BLL.DataStructures;
+using BLL.OOP;
 using BLL.StringOperation;
 using System;
 
@@ -37,17 +38,22 @@ namespace DotNetCoreTrainingApp
             //Hashtable
             //dataStructures.LoadHashtable();
 
-            Coordinate point = new Coordinate(10, 20);
+            //Coordinate point = new Coordinate(10, 20);
             //Console.WriteLine(point.x); //output: 10  
            // Console.WriteLine(point.y); //output: 20
 
             //Enum 
-            dataStructures.LoadValue(Direction.UP);
+            //dataStructures.LoadValue(Direction.UP);
 
             //StringOperation stringOpp = new StringOperation();
             //stringOpp.LoadStringData();
 
             //Console.WriteLine(data);
+
+            //OOP
+            Coordinator coordinator = new Coordinator();
+            var managerName = coordinator.LoadManagerName();
+            Console.WriteLine(managerName);
         }
     }
 
