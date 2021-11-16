@@ -71,7 +71,7 @@ namespace BLL.OOP
             return $" Code : {name}";
         }
 
-        public virtual string LoadCodeName(string name , string deptName)
+        public virtual string LoadCodeName(string name, string deptName)
         {
             return $" Code : {name}-{deptName}";
         }
@@ -102,7 +102,7 @@ namespace BLL.OOP
     //Inheritance
     public class Coordinator : Manager
     {
-        
+
     }
 
     public class Officer : Manager
@@ -131,6 +131,23 @@ namespace BLL.OOP
     public class Cat : Feline
     {
         public Cat(string name) : base(name) { }
+    }
+    #endregion
+
+    #region Boxing
+    //it wraps the value inside a System.
+    //Object instance and stores it on the managed heap.
+    public class BoxUnbox
+    {
+        public void LoadData()
+        {
+            int i = 123;
+            // The following line boxes i.
+            object o = i;
+
+            o = 123;
+            i = (int)o;  // unboxing
+        }
     }
     #endregion
 }

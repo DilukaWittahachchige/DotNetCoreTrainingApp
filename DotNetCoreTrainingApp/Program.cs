@@ -1,6 +1,7 @@
 ﻿// Import components to use in the file
 using BLL;
 using BLL.DataStructures;
+using BLL.Delegates;
 using BLL.OOP;
 using BLL.StringOperation;
 using System;
@@ -40,7 +41,7 @@ namespace DotNetCoreTrainingApp
 
             //Coordinate point = new Coordinate(10, 20);
             //Console.WriteLine(point.x); //output: 10  
-           // Console.WriteLine(point.y); //output: 20
+            // Console.WriteLine(point.y); //output: 20
 
             //Enum 
             //dataStructures.LoadValue(Direction.UP);
@@ -51,9 +52,17 @@ namespace DotNetCoreTrainingApp
             //Console.WriteLine(data);
 
             //OOP
-            Coordinator coordinator = new Coordinator();
-            var managerName = coordinator.LoadManagerName();
-            Console.WriteLine(managerName);
+            //Coordinator coordinator = new Coordinator();
+            //var managerName = coordinator.LoadManagerName();
+            //Console.WriteLine(managerName);
+
+            //DelegateExample delg = new DelegateExample();
+            //delg.ShowData();
+
+            //Call static method
+            string[] values = { "Lorem", "Ipsum" };
+            DelegateExample.Process(values, DelegateExample.ToUpper);
+
         }
     }
 
