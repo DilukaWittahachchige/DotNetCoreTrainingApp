@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace BLL.OOP
 {
-    //Multiple Inheritance in C#
-    //public class Human : ILivingCondition, ILivingThing
-    //{
+    //Multiple inheritance using interfaces
+    public class Human : ILivingCondition, ILivingThing
+    {
+        public bool HasWater(string cityName)
+        {
+            throw new NotImplementedException();
+        }
 
-
-    //}
+        public bool Age()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
