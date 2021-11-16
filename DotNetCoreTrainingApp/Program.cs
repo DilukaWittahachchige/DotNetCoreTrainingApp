@@ -7,6 +7,7 @@ using BLL.StringOperation;
 using System;
 //Extension Reference
 using BLL.Extensions;
+using BLL.RefOut;
 
 
 // A namespace is a logical grouping of components
@@ -68,9 +69,16 @@ namespace DotNetCoreTrainingApp
 
             // Extension method 
 
-            string s = "Hello Extension Methods";
-            int i = s.WordCount();
-            Console.WriteLine(i);
+            //string s = "Hello Extension Methods";
+            //int i = s.WordCount();
+            //Console.WriteLine(i);
+
+            //BoxUnbox boxUnbox = new BoxUnbox();
+            //object principalAmount = 15000.00;  //-----------------> Boxing
+            //Console.WriteLine((double)boxUnbox.CalculateSimpleInterest(ref principalAmount)); //----------> UnBoxing
+
+            RefOutClass refOut = new RefOutClass();
+            refOut.ShowData();
 
         }
     }

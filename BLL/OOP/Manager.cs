@@ -148,6 +148,20 @@ namespace BLL.OOP
             o = 123;
             i = (int)o;  // unboxing
         }
+
+        /*
+         
+        that the function accepts the parameter by reference. 
+        So, you must convert the double to object first and then pass the object. 
+        In this way you can't avoid Boxing and UnBoxing.
+
+         */
+        public object CalculateSimpleInterest(ref object principalAmount)
+        {
+            return (2 * 5 * (double)principalAmount) / 100;
+        }
+
+
     }
     #endregion
 }
