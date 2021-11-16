@@ -8,6 +8,7 @@ using System;
 //Extension Reference
 using BLL.Extensions;
 using BLL.RefOut;
+using BLL.tuples;
 
 
 // A namespace is a logical grouping of components
@@ -23,9 +24,12 @@ namespace DotNetCoreTrainingApp
 
             //var data = SnapsEngine.LoadData();
 
-            DataStructure dataStructures = new DataStructure();
+            //DataStructure dataStructures = new DataStructure();
+
             //string[] strArray = dataStructures.LoadArrayDataFirst();
             //string[] styArraySecond = dataStructures.LoadArrayDataSecond();
+
+
             //array is accessed through its index
             //Console.WriteLine($"{strArray[0]} {strArray[1]}");
             //Nothing display for index 1
@@ -55,31 +59,44 @@ namespace DotNetCoreTrainingApp
 
             //Console.WriteLine(data);
 
+            //----------------------------------------------------------------------------------------------------------
             //OOP
             //Coordinator coordinator = new Coordinator();
             //var managerName = coordinator.LoadManagerName();
             //Console.WriteLine(managerName);
 
+            //----------------------------------------------------------------------------------------------------------
+
             //DelegateExample delg = new DelegateExample();
             //delg.ShowData();
 
+           //-----------------------------------------------------------------------------------------------------------
             //Call static method
             //string[] values = { "Lorem", "Ipsum" };
             //DelegateExample.Process(values, DelegateExample.ToUpper);
 
-            // Extension method 
+           //-------------------------------------------------------------------------------------------------------------
 
+            // Extension method 
             //string s = "Hello Extension Methods";
             //int i = s.WordCount();
             //Console.WriteLine(i);
 
+          //---------------------------------------------------------------------------------------------------------------
+            //Box Unbox
             //BoxUnbox boxUnbox = new BoxUnbox();
             //object principalAmount = 15000.00;  //-----------------> Boxing
             //Console.WriteLine((double)boxUnbox.CalculateSimpleInterest(ref principalAmount)); //----------> UnBoxing
 
-            RefOutClass refOut = new RefOutClass();
-            refOut.ShowData();
+          //----------------------------------------------------------------------------------------------------------------
+            //Ref Out
+            //RefOutClass refOut = new RefOutClass();
+            //refOut.ShowData();
 
+          //-----------------------------------------------------------------------------------------------------------------
+            //Tuple Async programming 
+            var author2 = TupleExample.GetTupleMethod();
+            Console.WriteLine("Author:{0}, Title:{1}, Year:{2}.", author2.Item1, author2.Item2, author2.Item3);
         }
     }
 
