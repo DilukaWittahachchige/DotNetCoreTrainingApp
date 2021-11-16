@@ -5,6 +5,9 @@ using BLL.Delegates;
 using BLL.OOP;
 using BLL.StringOperation;
 using System;
+//Extension Reference
+using BLL.Extensions;
+
 
 // A namespace is a logical grouping of components
 namespace DotNetCoreTrainingApp
@@ -60,8 +63,14 @@ namespace DotNetCoreTrainingApp
             //delg.ShowData();
 
             //Call static method
-            string[] values = { "Lorem", "Ipsum" };
-            DelegateExample.Process(values, DelegateExample.ToUpper);
+            //string[] values = { "Lorem", "Ipsum" };
+            //DelegateExample.Process(values, DelegateExample.ToUpper);
+
+            // Extension method 
+
+            string s = "Hello Extension Methods";
+            int i = s.WordCount();
+            Console.WriteLine(i);
 
         }
     }
