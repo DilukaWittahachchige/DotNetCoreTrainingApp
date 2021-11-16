@@ -11,6 +11,7 @@ using BLL.RefOut;
 using BLL.Tuples;
 using BLL.Loops;
 using BLL.Dates;
+using BLL.Generic;
 
 
 // A namespace is a logical grouping of components
@@ -107,8 +108,21 @@ namespace DotNetCoreTrainingApp
             //LoopSample.LoadForLoop();
             //LoopSample.LoadForEachLoop();
 
+            //---------------------------------------------------------------------------------------------------------------------
             //DateTime
-            DateSample.ShowDateType();
+            //DateSample.ShowDateType();
+
+            //----------------------------------------------------------------------------------------------------------------------
+            //Generic
+            // Version 1: use int type parameter.
+            GenericSample<int> test1 = new GenericSample<int>(5);
+            // Call the Write method.
+            test1.Write();
+
+            // Version 2: use string type parameter.
+            GenericSample<string> test2 = new GenericSample<string>("cat");
+            test2.Write();
+            //----------------------------------------------------------------------------------------------------------------------
         }
     }
 
