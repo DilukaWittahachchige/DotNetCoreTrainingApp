@@ -9,6 +9,8 @@ using System;
 using BLL.Extensions;
 using BLL.RefOut;
 using BLL.Tuples;
+using BLL.Loops;
+using BLL.Dates;
 
 
 // A namespace is a logical grouping of components
@@ -56,6 +58,7 @@ namespace DotNetCoreTrainingApp
 
             //StringOperation stringOpp = new StringOperation();
             //stringOpp.LoadStringData();
+            //stringOpp.ShowStringFormat();
 
             //Console.WriteLine(data);
 
@@ -70,36 +73,44 @@ namespace DotNetCoreTrainingApp
             //DelegateExample delg = new DelegateExample();
             //delg.ShowData();
 
-           //-----------------------------------------------------------------------------------------------------------
+            //-----------------------------------------------------------------------------------------------------------
             //Call static method
             //string[] values = { "Lorem", "Ipsum" };
             //DelegateExample.Process(values, DelegateExample.ToUpper);
 
-           //-------------------------------------------------------------------------------------------------------------
+            //-------------------------------------------------------------------------------------------------------------
 
             // Extension method 
             //string s = "Hello Extension Methods";
             //int i = s.WordCount();
             //Console.WriteLine(i);
 
-          //---------------------------------------------------------------------------------------------------------------
+            //---------------------------------------------------------------------------------------------------------------
             //Box Unbox
             //BoxUnbox boxUnbox = new BoxUnbox();
             //object principalAmount = 15000.00;  //-----------------> Boxing
             //Console.WriteLine((double)boxUnbox.CalculateSimpleInterest(ref principalAmount)); //----------> UnBoxing
 
-          //----------------------------------------------------------------------------------------------------------------
+            //----------------------------------------------------------------------------------------------------------------
             //Ref Out
             //RefOutClass refOut = new RefOutClass();
             //refOut.ShowData();
 
-          //-----------------------------------------------------------------------------------------------------------------
+            //-----------------------------------------------------------------------------------------------------------------
             //Tuple Async programming 
-            var author2 = TupleExample.GetTupleMethod();
-            Console.WriteLine("Author:{0}, Title:{1}, Year:{2}.", author2.Item1, author2.Item2, author2.Item3);
+            // var author2 = TupleExample.GetTupleMethod();
+            // Console.WriteLine("Author:{0}, Title:{1}, Year:{2}.", author2.Item1, author2.Item2, author2.Item3);
+
+            //--------------------------Loop---------------------------------------------------------------------------------------
+            //LoopSample.LoadWhileLoop();
+            //LoopSample.LoadDoWhileLoop();
+            //LoopSample.LoadForLoop();
+            //LoopSample.LoadForEachLoop();
+
+            //DateTime
+            DateSample.ShowDateType();
         }
     }
-
 
     /* Comments
        can also
