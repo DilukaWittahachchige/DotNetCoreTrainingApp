@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL.tuples
+namespace BLL.Tuples
 {
     public class TupleExample
     {

@@ -101,9 +101,6 @@ namespace DotNetCoreTrainingApp
     }
 
 
-
-
-
     /* Comments
        can also
        span several lines */
