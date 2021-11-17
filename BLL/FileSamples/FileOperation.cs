@@ -60,6 +60,11 @@ namespace BLL.FileSamples
 
         #region StreamReader and StreamWriter 
 
+        /*
+         * StreamWriter is designed for character output in a particular encoding, 
+         * whereas classes derived from Stream are designed for byte input and output.
+         */
+
         public static void LoadFileInfo()
         {
             // Get the directories currently on the C drive.

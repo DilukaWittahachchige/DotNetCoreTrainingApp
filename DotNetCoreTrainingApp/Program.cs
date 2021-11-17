@@ -14,6 +14,7 @@ using BLL.Dates;
 using BLL.Generic;
 using BLL.ObjectTypeAndCasting;
 using BLL.FileSamples;
+using BLL.Async;
 
 
 // A namespace is a logical grouping of components
@@ -139,7 +140,13 @@ namespace DotNetCoreTrainingApp
             //FileOperation.WriteFile(fileData);
 
             //FileStreamWriter and Reader 
-            FileOperation.LoadFileInfo();
+            //FileOperation.LoadFileInfo();
+
+            //-----------------------------------------------------------------------------------------------------------------------
+
+           // AsyncSample.callMethod();
+            AsyncSample.CallMethodTwo();
+
         }
     }
 
