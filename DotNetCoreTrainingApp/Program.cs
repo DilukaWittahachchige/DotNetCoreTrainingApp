@@ -13,6 +13,7 @@ using BLL.Loops;
 using BLL.Dates;
 using BLL.Generic;
 using BLL.ObjectTypeAndCasting;
+using BLL.FileSamples;
 
 
 // A namespace is a logical grouping of components
@@ -127,8 +128,18 @@ namespace DotNetCoreTrainingApp
 
             //Is and As operater
 
-            IsOperatorSample.Show();
-            AsOperatorSample.Show();
+            //IsOperatorSample.Show();
+            //AsOperatorSample.Show();
+
+            //-----------------------------------------------------------------------------------------------------------------------
+
+            //FileOperation.LoadFilePath();
+            //FileOperation.CreateFile();
+            //var fileData = FileOperation.ReadFile();
+            //FileOperation.WriteFile(fileData);
+
+            //FileStreamWriter and Reader 
+            FileOperation.LoadFileInfo();
         }
     }
 
