@@ -145,7 +145,10 @@ namespace DotNetCoreTrainingApp
             //-----------------------------------------------------------------------------------------------------------------------
 
            // AsyncSample.callMethod();
-            AsyncSample.CallMethodTwo();
+            //AsyncSample.CallMethodTwo();
+
+            //Sealed example OOP
+            SealedSample.SealedExample();
 
         }
     }
